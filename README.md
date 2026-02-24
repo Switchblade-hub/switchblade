@@ -10,11 +10,23 @@ Switchblade is a local-first system agent built in Go. While other AI agents may
 * **Dual-Control:** Manage the agent through a Terminal User Interface (TUI) or a Web GUI.
 * **Flexible Providers:** Supports local integration with Ollama (optional) or remote API providers.
 
-## Quick Start
-1. **Ensure Go is installed** (v1.22+)
-2. **Setup Provider (Optional):** Install Ollama and pull a model (e.g., `ollama pull llama3.2`) to keep everything local.
-3. **Clone and Run:**
-   ```bash
-   git clone [https://github.com/Switchblade-hub/switchblade.git](https://github.com/Switchblade-hub/switchblade.git)
-   cd switchblade
-   go run .
+## Installation
+
+### Option 1: Fast Install (Recommended)
+1. Download the latest release for your operating system (.zip for Windows, .tar.gz for Linux/Mac).
+2. Extract the folder.
+3. Run the `switchblade` executable file.
+
+### Option 2: Build from Source
+If you wish to compile the project yourself, follow these steps:
+
+**1. Install Go**
+* **Windows:** Download the installer from [go.dev/dl](https://go.dev/dl/).
+* **Linux (Ubuntu/Mint):** Run `sudo apt install golang-go`.
+* **Mac:** Run `brew install go`.
+
+**2. Compile the Project**
+Navigate to the extracted `switchblade` folder in your terminal and run:
+```bash
+go mod tidy
+go build -o switchblade
